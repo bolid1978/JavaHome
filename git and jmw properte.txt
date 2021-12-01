@@ -1,0 +1,303 @@
+--module-path "C:\Users\bolid\Downloads\JavaRushTasks\lib\javafx-sdk-14\lib" --add-modules javafx.controls,javafx.fxmll
+--module-path "C:\Users\bolid\Downloads\JavaRushTasks\lib\javafx-sdk-14\lib" --add-modules javafx.controls,javafx.fxml
+
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\out>git push one master
+To github.com:bolid1978/one.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'github.com:bolid1978/one.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\out>git push one
+To github.com:bolid1978/one.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'github.com:bolid1978/one.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\out>git pull one main
+remote: Enumerating objects: 57, done.
+remote: Counting objects: 100% (57/57), done.
+remote: Compressing objects: 100% (34/34), done.
+remote: Total 57 (delta 14), reused 57 (delta 14), pack-reused 0
+Unpacking objects: 100% (57/57), 25.18 KiB | 62.00 KiB/s, done.
+From github.com:bolid1978/one
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> one/main
+fatal: refusing to merge unrelated histories
+
+C:\out>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\out>git hits --all
+git: 'hits' is not a git command. See 'git --help'.
+
+The most similar command is
+        hist
+
+C:\out>git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]'
+ --graph --date=short"
+
+C:\out>git hist
+* 4a7ba96 2021-12-01 | ABC (HEAD -> master) [bolid]
+
+C:\out>git push --help
+
+C:\out>git push out
+fatal: 'out' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\out>git push one
+To github.com:bolid1978/one.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'github.com:bolid1978/one.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\out>git pull one
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 195 bytes | 10.00 KiB/s, done.
+From github.com:bolid1978/one
+ * [new branch]      master     -> one/master
+You asked to pull from the remote 'one', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+
+C:\out>git pull one master
+From github.com:bolid1978/one
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+C:\out>git hist
+* 7720e9d 2021-11-28 | change (HEAD -> main, one/main) [Bolid]
+* 35a3ff6 2021-11-28 | new sout [Bolid]
+* a3dd41a 2021-11-28 | add new [Bolid]
+* 215091b 2021-11-28 | Gnom [Bolid]
+
+C:\out>git hist
+* 7720e9d 2021-11-28 | change (HEAD -> main, one/main) [Bolid]
+* 35a3ff6 2021-11-28 | new sout [Bolid]
+* a3dd41a 2021-11-28 | add new [Bolid]
+* 215091b 2021-11-28 | Gnom (tag: first) [Bolid]
+
+C:\out>co 215091b
+"co" не €вл€етс€ внутренней или внешней
+командой, исполн€емой программой или пакетным файлом.
+
+C:\out>chekout 215091b
+"chekout" не €вл€етс€ внутренней или внешней
+командой, исполн€емой программой или пакетным файлом.
+
+C:\out>git checkout 215091b
+Note: switching to '215091b'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 215091b Gnom
+
+C:\out>git hist
+* 215091b 2021-11-28 | Gnom (HEAD, tag: first) [Bolid]
+
+C:\out>git hist
+* 4a7ba96 2021-12-01 | ABC (HEAD -> master) [bolid]
+
+C:\out>git remote -v
+one     git@github.com:bolid1978/one.git (fetch)
+one     git@github.com:bolid1978/one.git (push)
+
+C:\out>git push one\master
+fatal: 'one\master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\out>git push one/master
+fatal: 'one/master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\out>git push out
+fatal: 'out' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\out>git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository us
+ing
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+C:\out>git remote -v
+one     git@github.com:bolid1978/one.git (fetch)
+one     git@github.com:bolid1978/one.git (push)
+
+C:\out>git remote one
+error: Unknown subcommand: one
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--m
+irror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)..
+.]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+C:\out>git push one
+To github.com:bolid1978/one.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'github.com:bolid1978/one.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\out>git push one\master
+fatal: 'one\master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\out>git push one/master
+fatal: 'one/master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\out>git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=one/<branch> master
+
+
+C:\out>git pull one master
+From github.com:bolid1978/one
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+C:\out>git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository us
+ing
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+C:\out>git push one
+To github.com:bolid1978/one.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'github.com:bolid1978/one.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\out>git push one +master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 202 bytes | 33.00 KiB/s, done.
+Total 3 (delta 0), reused 1 (delta 0), pack-reused 0
+To github.com:bolid1978/one.git
+ + b6123c8...4a7ba96 master -> master (forced update)
+
+C:\out>cd..
+
+C:\>cd r
+
+C:\r>git remote add JavaHome git@github.com:bolid1978/JavaHome.git
+
+C:\r>git push JavaHome
+To github.com:bolid1978/JavaHome.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'github.com:bolid1978/JavaHome.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\r>git push JavaHome +master
+Enumerating objects: 3969, done.
+Counting objects: 100% (3969/3969), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3312/3312), done.
+Writing objects: 100% (3969/3969), 97.87 MiB | 1004.00 KiB/s, done.
+Total 3969 (delta 598), reused 2735 (delta 595), pack-reused 0
+remote: Resolving deltas: 100% (598/598), done.
+remote: warning: See http://git.io/iEPt8g for more information.
+remote: warning: File 8.Games/lib/javafx-sdk-11.0.2/bin/jfxwebkit.dll is 61.52 M
+B; this is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: warning: File 8.Games/lib/javafx-sdk-14/bin/jfxwebkit.dll is 56.32 MB; t
+his is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: warning: GH001: Large files detected. You may want to try Git Large File
+ Storage - https://git-lfs.github.com.
+To github.com:bolid1978/JavaHome.git
+ + bf10629...bca88ea master -> master (forced update)
+
+C:\r>
